@@ -14,9 +14,13 @@ Generate, animate, edit, and extend short AI videos for ads, product stories, so
 | **Cost** | Free to install. Each render uses credits on your Beatra account, and paid steps run only when you ask for that exact render or approve its card. |
 | **Works with** | Claude Code, Codex, OpenClaw |
 
+<p align="center"><img src="assets/hero.webp" width="800" alt="One frame from each clip: a text-to-video product shot of a fictional wristwatch (left) and an image-to-video snowy cabin scene (right). AI-generated with Beatra."></p>
+
+*One frame from each clip: a text-to-video product shot of a fictional wristwatch (left) and an image-to-video snowy cabin scene (right). AI-generated with Beatra.*
+
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`beatra-ai-video-studio`](skills/beatra-ai-video-studio) | [SKILL.md](skills/beatra-ai-video-studio/SKILL.md) | 1.2.5 |
+| [`beatra-ai-video-studio`](skills/beatra-ai-video-studio) | [SKILL.md](skills/beatra-ai-video-studio/SKILL.md) | 1.2.6 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/beatra-ai-video-studio). Report issues there.
 
@@ -41,6 +45,32 @@ Or paste this into your agent:
 
 ```text
 Install the beatra-ai-video-studio skill from https://github.com/beatra-ai/ai-video-generator-skill (folder skills/beatra-ai-video-studio), then follow its SKILL.md to connect my Beatra account.
+```
+
+## Examples
+
+<p align="center"><img src="assets/preview-1.webp" width="800" alt="A 4-second text-to-video product shot: slow push-in on a fictional steel wristwatch resting on wet black stone. AI-generated with Beatra."></p>
+
+[▶ Watch the full video (MP4)](assets/full-1.mp4)
+
+*Full 4-second 1080p text-to-video clip of a fictional wristwatch on wet black stone with soft rim light, with model-generated ambient sound. AI-generated with Beatra.*
+
+Prompt:
+
+```text
+Cinematic luxury product ad shot. A steel automatic wristwatch with a deep midnight-blue sunburst dial, plain polished baton hour markers, no text and no logos on the dial, lies on a slab of wet black stone covered in small water droplets. Dark studio, soft rim light traces the case edge and bracelet, a gentle highlight glides across the sapphire crystal. The camera makes one slow, steady push-in from a three-quarter view toward the dial; a single water droplet slides slowly down the stone beside the watch. The watch stays perfectly still and keeps its exact shape, the second hand ticks smoothly. Shallow depth of field, crisp macro detail, restrained elegant pacing, ends on a close framing of the dial. Subtle ambient sound of soft water drips.
+```
+
+<p align="center"><img src="assets/preview-2.webp" width="800" alt="A 5-second image-to-video clip: a generated still of a mountain cabin at blue hour comes alive with falling snow, chimney smoke, and a slow push-in. AI-generated with Beatra."></p>
+
+[▶ Watch the full video (MP4)](assets/full-2.mp4)
+
+*Full 5-second 720p image-to-video clip of a snowy mountain cabin with falling snow and rising chimney smoke, with model-generated ambient sound. AI-generated with Beatra.*
+
+Prompt:
+
+```text
+Gentle falling snow drifts down across the whole scene in soft, slow flakes. Chimney smoke rises and curls lazily to the left. The window light glows warmly with a faint flicker. The camera makes one slow, smooth push-in toward the cabin. The cabin, roof, pine trees and mountains stay still and keep their exact shape. Calm, quiet winter evening pacing. Soft ambient sound of wind and falling snow.
 ```
 
 ## What you get
