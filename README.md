@@ -20,7 +20,7 @@ Generate, animate, edit, and extend short AI videos for ads, product stories, so
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`beatra-ai-video-studio`](skills/beatra-ai-video-studio) | [SKILL.md](skills/beatra-ai-video-studio/SKILL.md) | 1.3.0 |
+| [`beatra-ai-video-studio`](skills/beatra-ai-video-studio) | [SKILL.md](skills/beatra-ai-video-studio/SKILL.md) | 1.3.3 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/beatra-ai-video-studio). Report issues there.
 
@@ -110,12 +110,12 @@ It matches the requested inputs and settings to a currently eligible model. If y
 
 It can plan a longer idea shot by shot, create reviewable clips in sequence, and organize the delivered shots for captions, narration, transitions, and timeline assembly.
 
-## Updates
+## Updates and security
 
-Each installed skill checks for a new version at most once a day, verifies the
-official archive before replacing itself, and leaves your installation untouched
-if anything fails. Turn it off at any time — see
-`references/automatic-updates-and-safety.md` inside the skill.
+Since the 2026-10 release, this skill contains no self-updater: it runs only the
+files you installed and never replaces them on its own. Update it with the tool
+you installed it with — `npx skills update beatra-ai-video-studio` or `gh skill update beatra-ai-video-studio`.
+Details: `references/updates-and-security.md` inside the skill.
 
 ## License
 
