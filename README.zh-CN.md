@@ -20,7 +20,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`beatra-ai-video-studio`](skills/beatra-ai-video-studio) | [SKILL.md](skills/beatra-ai-video-studio/SKILL.md) | 1.3.3 |
+| [`beatra-ai-video-studio`](skills/beatra-ai-video-studio) | [SKILL.md](skills/beatra-ai-video-studio/SKILL.md) | 1.3.4 |
 
 本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/beatra-ai-video-studio) 自动发布，问题请到那里反馈。
 
@@ -72,6 +72,34 @@ Cinematic luxury product ad shot. A steel automatic wristwatch with a deep midni
 Gentle falling snow drifts down across the whole scene in soft, slow flakes. Chimney smoke rises and curls lazily to the left. The window light glows warmly with a faint flicker. The camera makes one slow, smooth push-in toward the cabin. The cabin, roof, pine trees and mountains stay still and keep their exact shape. Calm, quiet winter evening pacing. Soft ambient sound of wind and falling snow.
 ```
 
+## 规格
+
+截至 2026-10-16。实时列表：https://docs.beatra.ai/zh/docs/models
+
+- **文生图** — 10 个模型（Qwen Image 2.0 Fast、Qwen Image 3.0、Qwen Image 3.0 Pro、GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro、MiniMax Image 01 Live）；单次最多 4 张；画布最多 16777216 像素
+- **图生图** — 10 个模型（Qwen Image 2.0 Fast、Qwen Image 3.0、Qwen Image 3.0 Pro、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro、GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2、MiniMax Image 01 Live）；单次最多 4 张；画布最多 16777216 像素
+- **图片编辑** — 6 个模型（Qwen Image 2.0 Fast、Qwen Image 3.0、Qwen Image 3.0 Pro、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro）；单次最多 4 张；画布最多 4194304 像素
+- **文生视频** — 9 个模型（seedance-2-mini、wan2.7-t2v、wan3.0-video、minimax-h3、happyhorse-1.1-t2v、seedance-2-fast、seedance-2、wan3.0-video-prime、seedance-2.5）；480p 至 4K；2–30 秒；画幅 16:9、1:1、21:9、3:4、4:3、9:16、4:5、5:4、9:21；MOV、MP4；2 个带原生音频
+- **图生视频** — 9 个模型（wan2.7-i2v、wan3.0-video、minimax-h3、seedance-2-mini、happyhorse-1.1-i2v、seedance-2-fast、seedance-2、wan3.0-video-prime、seedance-2.5）；480p 至 4K；2–30 秒；画幅 16:9、1:1、21:9、3:4、4:3、9:16；MOV、MP4；2 个带原生音频
+- **首尾帧生视频** — 8 个模型（wan2.7-i2v、wan3.0-video、minimax-h3、seedance-2-mini、seedance-2-fast、seedance-2、wan3.0-video-prime、seedance-2.5）；480p 至 4K；2–30 秒；画幅 16:9、1:1、21:9、3:4、4:3、9:16；MOV、MP4；2 个带原生音频
+- **参考生视频** — 9 个模型（wan2.7-r2v、minimax-h3、wan3.0-video、happyhorse-1.1-r2v、seedance-2-mini、seedance-2-fast、seedance-2、wan3.0-video-prime、seedance-2.5）；480p 至 4K；2–30 秒；画幅 16:9、1:1、3:4、4:3、9:16、21:9、4:5、5:4、9:21；MOV、MP4；2 个带原生音频
+- **视频编辑** — 8 个模型（wan2.7-videoedit、wan3.0-video、happyhorse-1.0-video-edit、seedance-2-mini、seedance-2-fast、seedance-2、wan3.0-video-prime、seedance-2.5）；480p 至 4K；2–30 秒；画幅 16:9、1:1、3:4、4:3、9:16、21:9；MOV、MP4
+- **视频延长** — 7 个模型（wan2.7-i2v、wan3.0-video、seedance-2-mini、seedance-2-fast、seedance-2、wan3.0-video-prime、seedance-2.5）；480p 至 4K；2–30 秒；画幅 16:9、1:1、21:9、3:4、4:3、9:16；MOV、MP4；1 个带原生音频
+
+## 与同类方案对比
+
+| | Beatra（本 skill） | [scenario-labs/skills](https://github.com/scenario-labs/skills) | [black-forest-labs/skills](https://github.com/black-forest-labs/skills) |
+| --- | --- | --- | --- |
+| 需要的账号或 key | 一个 Beatra 账号，不需要各家模型的 key | Scenario 账号（OAuth 登录）或 Scenario API key（[出处](https://github.com/scenario-labs/skills/blob/49dd26e47371163ae0020c7f5627d0993626bfc2/README.md#L105)） | BFL API key（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/README.md#L160-L166)） |
+| 模型 | 文生图 10；图生图 10；图片编辑 6；文生视频 9；图生视频 9；首尾帧生视频 8；参考生视频 9；视频编辑 8；视频延长 7 | Scenario 上的视频模型，包括 MiniMax Hailuo、Gemini Omni、Grok Imagine、Veo、Seedance、Kling、Vidu、Wan、Runway、Luma Ray（[出处](https://github.com/scenario-labs/skills/blob/49dd26e47371163ae0020c7f5627d0993626bfc2/README.md#L262-L277)） | FLUX 3 视频模型，支持原生音频（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/README.md#L76)） |
+| 花钱前 | 只有你明确要求这次生成，或批准显示实时积分估算的确认卡后才会付费 | 质量检查和模型对比两个 skill 可先 dry-run 试算价格（[出处](https://github.com/scenario-labs/skills/blob/49dd26e47371163ae0020c7f5627d0993626bfc2/README.md#L208-L210)） | `draft: true` 可先出快速的低步数预览，再做完整渲染（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/README.md#L108)） |
+| 支持的 Agent | Claude Code、Codex、OpenClaw | Claude Code、Cursor、Codex、Copilot 及另外 70 多种编程 Agent（[出处](https://github.com/scenario-labs/skills/blob/49dd26e47371163ae0020c7f5627d0993626bfc2/README.md#L30)） | 编程 Agent（skill 遵循 agentskills.io 规范）；另有 Claude Code 插件（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/README.md#L16-L68)） |
+| 安装 | `npx skills add beatra-ai/ai-video-generator-skill` | `npx skills add scenario-labs/skills`，再连接 Scenario MCP 服务器（https://mcp.scenario.com/mcp）（[出处](https://github.com/scenario-labs/skills/blob/49dd26e47371163ae0020c7f5627d0993626bfc2/README.md#L89-L105)） | `npx skills add black-forest-labs/skills --skill flux-3-video`（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/README.md#L36)） |
+| 许可证 | MIT-0 | MIT（[出处](https://github.com/scenario-labs/skills/blob/49dd26e47371163ae0020c7f5627d0993626bfc2/LICENSE)） | MIT（[出处](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/LICENSE)） |
+| 最近更新 | 随每次发布更新（v1.3.4） | 2026-10-15（[出处](https://github.com/scenario-labs/skills/commit/49dd26e47371163ae0020c7f5627d0993626bfc2)） | 2026-08-26（[出处](https://github.com/black-forest-labs/skills/commit/8907d515b0ac270a988ec7a239add81ee13d6cba)） |
+
+事实核对于 2026-10-16。有误请到 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/issues) 提 issue。
+
 ## 你能得到什么
 
 - **先定方向，再制作** — 先明确动作、运镜、节奏、时长与发布场景，让镜头意图更清楚。
@@ -118,3 +146,13 @@ Gentle falling snow drifts down across the whole scene in soft, slow flakes. Chi
 ## 许可证
 
 [MIT-0](LICENSE)：可自由使用、修改和再分发，包括商用，无需署名；与这些 skill 在 ClawHub 上的条款一致。
+
+## 相关链接
+
+- 官网 — https://www.beatra.cn
+- 文档 — https://docs.beatra.cn
+- 控制台 — https://console.beatra.cn
+
+- 微信小程序 — 国内用户微信扫码使用
+
+<img src="assets/beatra-mini-program-qr.jpg" alt="Beatra 微信小程序码" width="160">
