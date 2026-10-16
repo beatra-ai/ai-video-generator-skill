@@ -87,6 +87,15 @@ As of 2026-10-16. Live list: https://docs.beatra.ai/en/docs/models
 - **Video editing** — 8 models (wan2.7-videoedit, wan3.0-video, happyhorse-1.0-video-edit, seedance-2-mini, seedance-2-fast, seedance-2, wan3.0-video-prime, seedance-2.5); 480p to 4K; 2–30 s; aspect ratios 16:9, 1:1, 3:4, 4:3, 9:16, 21:9; MOV, MP4
 - **Video extension** — 7 models (wan2.7-i2v, wan3.0-video, seedance-2-mini, seedance-2-fast, seedance-2, wan3.0-video-prime, seedance-2.5); 480p to 4K; 2–30 s; aspect ratios 16:9, 1:1, 21:9, 3:4, 4:3, 9:16; MOV, MP4; 1 with native audio
 
+## Why use Beatra instead of calling model APIs directly
+
+- **One account for every model this skill uses** — Text to image 10; Image to image 10; Image editing 6; Text to video 9; Image to video 9; First and last frames to video 8; Reference to video 9; Video editing 8; Video extension 7 (as of 2026-10-16), behind one Beatra sign-in; no keys from individual model providers to manage.
+- **You decide what gets paid for** — Paid renders run only when you ask for that exact render or approve its card, which shows the live credit estimate.
+- **Direction before rendering** — the skill plans, directs, and reviews the work, then renders it on Beatra.
+- **Files you can verify** — every file under `skills/` matches the release archive on cdn.beatra.ai byte for byte, checked by SHA-256 before each push.
+- **Updates you control** — no self-updater; update with the tool you installed it with.
+- **Runs in your agent** — Claude Code, Codex, OpenClaw.
+
 ## How it compares
 
 | | Beatra (this skill) | [scenario-labs/skills](https://github.com/scenario-labs/skills) | [black-forest-labs/skills](https://github.com/black-forest-labs/skills) |
@@ -156,3 +165,4 @@ ClawHub.
 - Website — https://beatra.ai
 - Docs — https://docs.beatra.ai
 - Console — https://console.beatra.ai
+- For AI agents — https://beatra.ai/llms.txt (index) · https://beatra.ai/llms-full.txt (every skill in one file)
