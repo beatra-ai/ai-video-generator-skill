@@ -1,6 +1,8 @@
 # AI Video Generator Skill
 
-[English](./README.md) | 简体中文
+[English](./README.md) | 简体中文 | [日本語](./README.ja.md)
+
+> 👉 也看看 [AI Image Generator Skill](https://github.com/beatra-ai/ai-image-generator-skill)
 
 从文字、图片、首尾帧、参考素材或已有片段出发，生成、编辑和延长广告、产品与社交短视频，在 Claude Code、Cursor、Codex、Windsurf、Cline 或 OpenClaw 里直接完成。
 
@@ -55,6 +57,12 @@ gh skill install beatra-ai/ai-video-generator-skill beatra-ai-video-studio
 
 *完整 4 秒 1080p 文生视频：柔和轮廓光下湿润黑石上的虚构腕表，带模型生成的环境音。由 Beatra AI 生成。*
 
+在你的 Agent 里这样说：
+
+```text
+用文字生成一段 4 秒的电影感产品短片：一块午夜蓝表盘的钢制自动腕表，表盘上没有文字和 Logo，放在湿润的黑色石板上，镜头缓慢推进，柔和的轮廓光。
+```
+
 提示词：
 
 ```text
@@ -66,6 +74,12 @@ Cinematic luxury product ad shot. A steel automatic wristwatch with a deep midni
 [▶ 观看完整视频（MP4）](assets/full-2.mp4)
 
 *完整 5 秒 720p 图生视频：雪花飘落、烟囱升起炊烟的雪山小木屋，带模型生成的环境音。由 Beatra AI 生成。*
+
+在你的 Agent 里这样说：
+
+```text
+把 ./cabin-blue-hour.png 做成 5 秒的动画：整个画面飘着细雪，烟囱的烟向左缓缓卷起，窗户透出温暖的灯光，镜头平稳地慢慢推进一次。
+```
 
 提示词：
 

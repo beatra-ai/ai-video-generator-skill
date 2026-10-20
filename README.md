@@ -1,6 +1,8 @@
 # AI Video Generator Skill
 
-English | [简体中文](./README.zh-CN.md)
+English | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md)
+
+> 👉 See also [AI Image Generator Skill](https://github.com/beatra-ai/ai-image-generator-skill)
 
 Generate, animate, edit, and extend short AI videos for ads, product stories, social posts, b-roll, transitions, and cinematic concepts, from inside Claude Code, Cursor, Codex, Windsurf, Cline, or OpenClaw.
 
@@ -57,6 +59,12 @@ Install the beatra-ai-video-studio skill from https://github.com/beatra-ai/ai-vi
 
 *Full 4-second 1080p text-to-video clip of a fictional wristwatch on wet black stone with soft rim light, with model-generated ambient sound. AI-generated with Beatra.*
 
+Ask your agent:
+
+```text
+Make a 4-second cinematic product clip from text: a steel automatic wristwatch with a midnight-blue dial, no text or logos, lying on wet black stone, slow push-in, soft rim light.
+```
+
 Prompt:
 
 ```text
@@ -68,6 +76,12 @@ Cinematic luxury product ad shot. A steel automatic wristwatch with a deep midni
 [▶ Watch the full video (MP4)](assets/full-2.mp4)
 
 *Full 5-second 720p image-to-video clip of a snowy mountain cabin with falling snow and rising chimney smoke, with model-generated ambient sound. AI-generated with Beatra.*
+
+Ask your agent:
+
+```text
+Animate ./cabin-blue-hour.png into a 5-second clip: gentle snow falling across the scene, chimney smoke curling to the left, the window light glowing warmly, and one slow smooth push-in.
+```
 
 Prompt:
 
