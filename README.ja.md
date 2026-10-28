@@ -35,6 +35,33 @@
 npx skills add beatra-ai/ai-video-generator-skill
 ```
 
+Claude Code プラグインとして：
+
+```bash
+claude plugin marketplace add beatra-ai/ai-video-generator-skill
+claude plugin install beatra-ai-video-studio@ai-video-generator-skill
+```
+
+Codex プラグインとして：
+
+```bash
+codex plugin marketplace add beatra-ai/ai-video-generator-skill
+codex plugin add beatra-ai-video-studio@ai-video-generator-skill
+```
+
+GitHub Copilot CLI プラグインとして：
+
+```bash
+copilot plugin marketplace add beatra-ai/ai-video-generator-skill
+copilot plugin install beatra-ai-video-studio@ai-video-generator-skill
+```
+
+Gemini CLI 拡張機能として：
+
+```bash
+gemini extensions install https://github.com/beatra-ai/ai-video-generator-skill
+```
+
 GitHub CLI を使う場合：
 
 ```bash

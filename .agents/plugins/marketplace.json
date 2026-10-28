@@ -1,0 +1,20 @@
+{
+  "name": "ai-video-generator-skill",
+  "interface": {
+    "displayName": "AI Video Generator"
+  },
+  "plugins": [
+    {
+      "name": "beatra-ai-video-studio",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity"
+    }
+  ]
+}

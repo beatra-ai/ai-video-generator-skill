@@ -35,6 +35,33 @@ With the [`skills`](https://skills.sh) CLI:
 npx skills add beatra-ai/ai-video-generator-skill
 ```
 
+As a Claude Code plugin:
+
+```bash
+claude plugin marketplace add beatra-ai/ai-video-generator-skill
+claude plugin install beatra-ai-video-studio@ai-video-generator-skill
+```
+
+As a Codex plugin:
+
+```bash
+codex plugin marketplace add beatra-ai/ai-video-generator-skill
+codex plugin add beatra-ai-video-studio@ai-video-generator-skill
+```
+
+As a GitHub Copilot CLI plugin:
+
+```bash
+copilot plugin marketplace add beatra-ai/ai-video-generator-skill
+copilot plugin install beatra-ai-video-studio@ai-video-generator-skill
+```
+
+As a Gemini CLI extension:
+
+```bash
+gemini extensions install https://github.com/beatra-ai/ai-video-generator-skill
+```
+
 With the GitHub CLI:
 
 ```bash
