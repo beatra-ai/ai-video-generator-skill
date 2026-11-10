@@ -10,6 +10,20 @@
   "homepage": "https://beatra.ai/skills/beatra-ai-video-studio",
   "repository": "https://github.com/beatra-ai/ai-video-generator-skill",
   "license": "MIT-0",
+  "keywords": [
+    "AI video generator",
+    "text to video",
+    "image to video",
+    "AI video editing",
+    "AI video extender",
+    "product video maker",
+    "AI ad video",
+    "social video generator",
+    "first last frame video",
+    "AI b-roll",
+    "cinematic AI video",
+    "AI video studio"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
@@ -19,6 +33,13 @@
         "developerName": "Beatra AI",
         "category": "Creativity",
         "websiteURL": "https://beatra.ai/skills/beatra-ai-video-studio",
+        "supportURL": "https://github.com/beatra-ai/.github/blob/main/SUPPORT.md",
+        "privacyPolicyURL": "https://beatra.ai/privacy",
+        "termsOfServiceURL": "https://beatra.ai/terms",
+        "defaultPrompt": [
+          "Use Beatra AI Video Studio to turn my sunny bakery storefront clip into a snowy day. Clip attached; keep the people the same."
+        ],
+        "composerIcon": "./assets/icon.png",
         "logo": "./assets/icon.png"
       }
     }

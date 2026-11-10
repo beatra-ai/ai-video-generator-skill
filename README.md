@@ -62,6 +62,12 @@ As a Gemini CLI extension:
 gemini extensions install https://github.com/beatra-ai/ai-video-generator-skill
 ```
 
+As an Antigravity CLI plugin:
+
+```bash
+agy plugin install https://github.com/beatra-ai/ai-video-generator-skill
+```
+
 With the GitHub CLI:
 
 ```bash
@@ -115,6 +121,16 @@ Prompt:
 ```text
 Gentle falling snow drifts down across the whole scene in soft, slow flakes. Chimney smoke rises and curls lazily to the left. The window light glows warmly with a faint flicker. The camera makes one slow, smooth push-in toward the cabin. The cabin, roof, pine trees and mountains stay still and keep their exact shape. Calm, quiet winter evening pacing. Soft ambient sound of wind and falling snow.
 ```
+
+## Inputs and outputs
+
+| | Type | Formats | Specifications |
+| --- | --- | --- | --- |
+| **Input** | Text — Written shot description | — | — |
+| **Input** | Image — Opening image, first and last frames, or references (optional) | JPG, PNG, WEBP | — |
+| **Input** | Video — Footage to edit or extend (optional) | MP4, MOV | up to 100 MB each |
+| **Output** | Video — Short AI video clip | MP4 | 1 video per request; 2–30 s; 480p, 720p, 1080p, 2K, 4K; aspect ratios 16:9, 9:16, 1:1, 4:3, 3:4, 21:9; editable |
+| **Output** | Image — Opening image (optional) | PNG | 1 image per request |
 
 ## Technical Specifications & Output Limits
 
@@ -203,7 +219,7 @@ Yes. Use one image as the opening frame, or provide exact first and last images 
 
 ### Can it edit or continue existing footage?
 
-Yes. It can make a focused change to one clip or add new footage directly before or after it, then help you review the result.
+Yes. It can make a focused change to one clip or add new footage directly before or after it.
 
 ### Which video model does it use?
 
@@ -211,7 +227,7 @@ It matches the requested inputs and settings to a currently eligible model. If y
 
 ### Can it make a longer sequence?
 
-It can plan a longer idea shot by shot, create reviewable clips in sequence, and organize the delivered shots for captions, narration, transitions, and timeline assembly.
+Yes. It plans a longer idea shot by shot, creates the clips in sequence, and organizes the delivered shots for captions, narration, transitions, and timeline assembly.
 
 ## Updates and security
 
@@ -222,9 +238,10 @@ Details: `references/updates-and-security.md` inside the skill.
 
 ## License
 
-[MIT-0](LICENSE) — free to use, modify, and redistribute, including
-commercially. No attribution required. Same terms as these skills carry on
-ClawHub.
+The skill files in this repository (`SKILL.md`, references, and scripts) and this README are licensed under
+[MIT-0](LICENSE): free to use, modify, and redistribute, including commercially, with no attribution required.
+
+Media generation runs on Beatra's cloud service under the [Beatra Terms of Service](https://beatra.ai/terms?utm_source=github&utm_medium=flagship&utm_campaign=ai-video-generator-skill).
 
 ## Links
 

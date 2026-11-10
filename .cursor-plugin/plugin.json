@@ -9,5 +9,19 @@
   "homepage": "https://beatra.ai/skills/beatra-ai-video-studio",
   "repository": "https://github.com/beatra-ai/ai-video-generator-skill",
   "license": "MIT-0",
+  "keywords": [
+    "AI video generator",
+    "text to video",
+    "image to video",
+    "AI video editing",
+    "AI video extender",
+    "product video maker",
+    "AI ad video",
+    "social video generator",
+    "first last frame video",
+    "AI b-roll",
+    "cinematic AI video",
+    "AI video studio"
+  ],
   "logo": "assets/icon.png"
 }

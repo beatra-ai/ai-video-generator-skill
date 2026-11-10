@@ -62,6 +62,12 @@ Gemini CLI 拡張機能として：
 gemini extensions install https://github.com/beatra-ai/ai-video-generator-skill
 ```
 
+Antigravity CLI プラグインとして：
+
+```bash
+agy plugin install https://github.com/beatra-ai/ai-video-generator-skill
+```
+
 GitHub CLI を使う場合：
 
 ```bash
@@ -113,6 +119,16 @@ Cinematic luxury product ad shot. A steel automatic wristwatch with a deep midni
 ```text
 Gentle falling snow drifts down across the whole scene in soft, slow flakes. Chimney smoke rises and curls lazily to the left. The window light glows warmly with a faint flicker. The camera makes one slow, smooth push-in toward the cabin. The cabin, roof, pine trees and mountains stay still and keep their exact shape. Calm, quiet winter evening pacing. Soft ambient sound of wind and falling snow.
 ```
+
+## 入力と出力
+
+| | 種類 | 形式 | 仕様 |
+| --- | --- | --- | --- |
+| **入力** | テキスト：ショットの説明 | — | — |
+| **入力** | 画像：最初の画像、最初と最後のフレーム、参考素材（任意） | JPG、PNG、WEBP | — |
+| **入力** | 動画：編集・延長する映像（任意） | MP4、MOV | 1 ファイル最大 100 MB |
+| **出力** | 動画：短いAI動画クリップ | MP4 | 1 リクエストにつき 1 本／2〜30 秒／480p、720p、1080p、2K、4K／アスペクト比 16:9、9:16、1:1、4:3、3:4、21:9／編集可能 |
+| **出力** | 画像：最初の画像（任意） | PNG | 1 リクエストにつき 1 枚 |
 
 ## 技術仕様と出力上限
 
@@ -178,7 +194,7 @@ Gentle falling snow drifts down across the whole scene in soft, slow flakes. Chi
 
 ### 既存映像の編集や延長はできますか？
 
-はい。1本の映像の必要な部分だけを変更するか、その直前・直後に新しい内容を追加し、結果を確認できます。
+はい。1本の映像の必要な部分だけを変更するか、その直前・直後に新しい映像を追加できます。
 
 ### どの動画モデルを使いますか？
 
@@ -186,7 +202,7 @@ Gentle falling snow drifts down across the whole scene in soft, slow flakes. Chi
 
 ### 長いシーケンスも作れますか？
 
-長いアイデアをショットごとに企画し、順番に確認できるクリップを制作します。納品したショットは、字幕、ナレーション、トランジション、タイムライン編集へ整理して使えます。
+はい。長いアイデアをショットごとに企画し、順番にクリップを制作します。納品したショットは、字幕、ナレーション、トランジション、タイムライン編集にそのまま使えるよう整理します。
 
 ## 更新とセキュリティ
 
@@ -196,7 +212,9 @@ Gentle falling snow drifts down across the whole scene in soft, slow flakes. Chi
 
 ## ライセンス
 
-[MIT-0](LICENSE)：商用を含め、自由に使用・改変・再配布できます。クレジット表記は不要です。ClawHub 上のこれらのスキルと同じ条件です。
+このリポジトリのスキルファイル（`SKILL.md`、リファレンス、スクリプト）とこの README は [MIT-0](LICENSE) で提供しています。商用を含め、自由に使用・改変・再配布でき、クレジット表記は不要です。
+
+生成は Beatra のクラウドサービスで行われ、[Beatra 利用規約](https://beatra.ai/terms?utm_source=github&utm_medium=flagship&utm_campaign=ai-video-generator-skill)が適用されます。
 
 ## リンク
 

@@ -62,6 +62,12 @@ copilot plugin install beatra-ai-video-studio@ai-video-generator-skill
 gemini extensions install https://github.com/beatra-ai/ai-video-generator-skill
 ```
 
+作为 Antigravity CLI 插件：
+
+```bash
+agy plugin install https://github.com/beatra-ai/ai-video-generator-skill
+```
+
 使用 GitHub CLI：
 
 ```bash
@@ -113,6 +119,16 @@ Cinematic luxury product ad shot. A steel automatic wristwatch with a deep midni
 ```text
 Gentle falling snow drifts down across the whole scene in soft, slow flakes. Chimney smoke rises and curls lazily to the left. The window light glows warmly with a faint flicker. The camera makes one slow, smooth push-in toward the cabin. The cabin, roof, pine trees and mountains stay still and keep their exact shape. Calm, quiet winter evening pacing. Soft ambient sound of wind and falling snow.
 ```
+
+## 输入与输出
+
+| | 类型 | 格式 | 规格 |
+| --- | --- | --- | --- |
+| **输入** | 文本：镜头描述 | — | — |
+| **输入** | 图片：开场图、首尾帧或参考素材（可选） | JPG、PNG、WEBP | — |
+| **输入** | 视频：要修改或延长的视频（可选） | MP4、MOV | 单个文件最大 100 MB |
+| **输出** | 视频：AI 短视频片段 | MP4 | 单次 1 段；2–30 秒；480p、720p、1080p、2K、4K；画幅 16:9、9:16、1:1、4:3、3:4、21:9；可编辑 |
+| **输出** | 图片：开场图（可选） | PNG | 单次 1 张 |
 
 ## 技术规格与输出限制
 
@@ -199,9 +215,9 @@ Gentle falling snow drifts down across the whole scene in soft, slow flakes. Chi
 
 可以。可以把一张图片作为开场画面，也可以提供准确的首尾两张图片来设计转场。
 
-### 可以修改或续拍已有视频吗？
+### 可以修改或延长已有视频吗？
 
-可以。可以只修改一段视频里需要调整的部分，或在它之前或之后增加新画面，再查看生成结果。
+可以。可以只修改一段视频里需要调整的部分，或在它之前或之后增加新画面。
 
 ### 它会使用哪个视频模型？
 
@@ -219,7 +235,9 @@ Gentle falling snow drifts down across the whole scene in soft, slow flakes. Chi
 
 ## 许可证
 
-[MIT-0](LICENSE)：可自由使用、修改和再分发，包括商用，无需署名；与这些 skill 在 ClawHub 上的条款一致。
+本仓库的 Skill 文件（`SKILL.md`、参考文档和脚本）与本 README 采用 [MIT-0](LICENSE) 许可：可自由使用、修改和再分发，包括商用，无需署名。
+
+内容生成在 Beatra 云端完成，适用 [Beatra 服务条款](https://www.beatra.cn/terms?utm_source=github&utm_medium=flagship&utm_campaign=ai-video-generator-skill)。
 
 ## 相关链接
 
