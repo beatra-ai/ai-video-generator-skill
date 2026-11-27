@@ -23,7 +23,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`beatra-ai-video-studio`](skills/beatra-ai-video-studio) | [SKILL.md](skills/beatra-ai-video-studio/SKILL.md) | 1.3.8 |
+| [`beatra-ai-video-studio`](skills/beatra-ai-video-studio) | [SKILL.md](skills/beatra-ai-video-studio/SKILL.md) | 1.3.9 |
 
 このリポジトリは [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/beatra-ai-video-studio) から自動的に公開されています。問題の報告はそちらへお願いします。
 
@@ -130,7 +130,7 @@ Gentle falling snow drifts down across the whole scene in soft, slow flakes. Chi
 | --- | --- | --- | --- |
 | **入力** | テキスト：ショットの説明 | — | — |
 | **入力** | 画像：最初の画像、最初と最後のフレーム、参考素材（任意） | JPG、PNG、WEBP | — |
-| **入力** | 動画：編集・延長する映像（任意） | MP4、MOV | 1 ファイル最大 100 MB |
+| **入力** | 動画：編集・延長する映像（任意） | MP4、MOV | 1 ファイル最大 50 MB |
 | **出力** | 動画：短いAI動画クリップ | MP4 | 1 リクエストにつき 1 本／2〜30 秒／480p、720p、1080p、2K、4K／アスペクト比 16:9、9:16、1:1、4:3、3:4、21:9／編集可能 |
 | **出力** | 画像：最初の画像（任意） | PNG | 1 リクエストにつき 1 枚 |
 

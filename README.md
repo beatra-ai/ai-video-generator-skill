@@ -23,7 +23,7 @@ Generate, animate, edit, and extend short AI videos for ads, product stories, so
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`beatra-ai-video-studio`](skills/beatra-ai-video-studio) | [SKILL.md](skills/beatra-ai-video-studio/SKILL.md) | 1.3.8 |
+| [`beatra-ai-video-studio`](skills/beatra-ai-video-studio) | [SKILL.md](skills/beatra-ai-video-studio/SKILL.md) | 1.3.9 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/beatra-ai-video-studio). Report issues there.
 
@@ -132,7 +132,7 @@ Gentle falling snow drifts down across the whole scene in soft, slow flakes. Chi
 | --- | --- | --- | --- |
 | **Input** | Text — Written shot description | — | — |
 | **Input** | Image — Opening image, first and last frames, or references (optional) | JPG, PNG, WEBP | — |
-| **Input** | Video — Footage to edit or extend (optional) | MP4, MOV | up to 100 MB each |
+| **Input** | Video — Footage to edit or extend (optional) | MP4, MOV | up to 50 MB each |
 | **Output** | Video — Short AI video clip | MP4 | 1 video per request; 2–30 s; 480p, 720p, 1080p, 2K, 4K; aspect ratios 16:9, 9:16, 1:1, 4:3, 3:4, 21:9; editable |
 | **Output** | Image — Opening image (optional) | PNG | 1 image per request |
 
@@ -192,7 +192,7 @@ As of 2026-11-14. Live list: https://docs.beatra.ai/en/docs/models
 | Agents | Claude Code, Cursor, Codex, Windsurf, Cline, OpenClaw | OpenClaw, Claude Code, Codex, Claude Cowork, Cursor, Antigravity ([source](https://github.com/ZeroLu/Ultimate-AI-Media-Generator-Skill/blob/f28e58f2b9814b2056417377c46f34fd35219702/README.md#L31-L36)) | Claude Code, Cursor, Codex, Copilot and 70+ others ([source](https://github.com/scenario-labs/skills/blob/49dd26e47371163ae0020c7f5627d0993626bfc2/README.md#L30)) | Coding agents (skills follow the agentskills.io spec); also a Claude Code plugin ([source](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/README.md#L16-L68)) |
 | Install | `npx skills add beatra-ai/ai-video-generator-skill` | `npx skills add ZeroLu/Ultimate-AI-Media-Generator-Skill --all` ([source](https://github.com/ZeroLu/Ultimate-AI-Media-Generator-Skill/blob/f28e58f2b9814b2056417377c46f34fd35219702/README.md#L60)) | `npx skills add scenario-labs/skills`, then connect the Scenario MCP server (https://mcp.scenario.com/mcp) ([source](https://github.com/scenario-labs/skills/blob/49dd26e47371163ae0020c7f5627d0993626bfc2/README.md#L89-L105)) | `npx skills add black-forest-labs/skills --skill flux-3-video` ([source](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/README.md#L36)) |
 | License | MIT-0 | MIT ([source](https://github.com/ZeroLu/Ultimate-AI-Media-Generator-Skill/blob/f28e58f2b9814b2056417377c46f34fd35219702/LICENSE)) | MIT ([source](https://github.com/scenario-labs/skills/blob/49dd26e47371163ae0020c7f5627d0993626bfc2/LICENSE)) | MIT ([source](https://github.com/black-forest-labs/skills/blob/8907d515b0ac270a988ec7a239add81ee13d6cba/LICENSE)) |
-| Last updated | Updated with every release (v1.3.8) | 2026-09-08 ([source](https://github.com/ZeroLu/Ultimate-AI-Media-Generator-Skill/commit/f28e58f2b9814b2056417377c46f34fd35219702)) | 2026-10-15 ([source](https://github.com/scenario-labs/skills/commit/49dd26e47371163ae0020c7f5627d0993626bfc2)) | 2026-08-26 ([source](https://github.com/black-forest-labs/skills/commit/8907d515b0ac270a988ec7a239add81ee13d6cba)) |
+| Last updated | Updated with every release (v1.3.9) | 2026-09-08 ([source](https://github.com/ZeroLu/Ultimate-AI-Media-Generator-Skill/commit/f28e58f2b9814b2056417377c46f34fd35219702)) | 2026-10-15 ([source](https://github.com/scenario-labs/skills/commit/49dd26e47371163ae0020c7f5627d0993626bfc2)) | 2026-08-26 ([source](https://github.com/black-forest-labs/skills/commit/8907d515b0ac270a988ec7a239add81ee13d6cba)) |
 
 Facts checked on 2026-10-16. Corrections: open an issue in [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/issues).
 
